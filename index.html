@@ -35,6 +35,11 @@
         git checkout <commit_id>
         git checkout master <!--ini untuk kembali lagi ke file yang terbaru, sebelum checkout ke git yang sebelumnya. abis git checkout ......(masukkan kode git yang ingin dituju), lalu baru git checkout master-->
         
+        git revert ... <!--REVERT COMMIT - kita akan undo masukkin coding dengan revert, tetapi log nya tetap ada sehingga dapat menambahkannya lagi. Revert hanya menghilangkan kode yang kita mau undo-->
+        git checkout master
+
+        git reset <commit_id> <!--it will reset to the commit id, delete commits after it. but the changes after it still there-->
+        git reset <commit_id> --hard <!---->
     </p>
 </body>
 </html>
