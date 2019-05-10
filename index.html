@@ -38,8 +38,11 @@
         git revert ... <!--REVERT COMMIT - kita akan undo masukkin coding dengan revert, tetapi log nya tetap ada sehingga dapat menambahkannya lagi. Revert hanya menghilangkan kode yang kita mau undo-->
         git checkout master
 
+        <!-- GIT RESET -  itu digunakan untuk menghilangkan commit_id yang banyak, dan membuat summary (git commit -m "membuat halaman pertama") -->
         git reset <commit_id> <!--it will reset to the commit id, delete commits after it. but the changes after it still there-->
-        git reset <commit_id> --hard <!---->
+        git reset <commit_id> --hard <!--ini menghilangkan commit id dan menghilangkan kode nya, dan tidak bisa di undo untuk munculin kembali-->
+
+        git push origin master <!--ini untuk masukin ke github.com (upload ke github)-->
     </p>
 </body>
 </html>
